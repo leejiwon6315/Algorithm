@@ -17,7 +17,7 @@ vector<int> solution(vector<int> array, vector<vector<int>> commands) {
            tmp.push_back(array[i]);
         }
         sort(tmp.begin(),tmp.end(), p);
-        //p대신 greater<int>() 사용이 가능할듯
+        //p대신 less<int>() 사용이 가능할듯 or 사용안해도 기본 오름차순 정렬
         
         answer.push_back(tmp[(commands[j][2]-1)]);
         
