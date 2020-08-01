@@ -42,6 +42,7 @@ int main(){
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
             scanf("%1d", &map[i][j]);
+            // 문제에서 주어지는 입력값 문자열에 띄어쓰기가 없기 때문에 scanf를 사용하여 %1d 로 한글자씩 입력받음
         }
     }
     
