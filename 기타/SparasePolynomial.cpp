@@ -1,10 +1,3 @@
-//
-//  main.cpp
-//  알고리즘공부
-//
-//  Created by 이지원 on 2020/01/09.
-//  Copyright © 2020 이지원. All rights reserved.
-//
 
 #include <cstdio>
 #include <iostream>
