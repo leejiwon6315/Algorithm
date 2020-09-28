@@ -17,8 +17,7 @@ void unionParent(vector<int> &parent, int a, int b){
     a = getParent(parent, a);
     b = getParent(parent, b);
     
-    if(a<b) parent[b] = a;
-    else parent[a] = b;
+    parent[b] = a;
 }
 
 bool find(vector<int> &parent, int a, int b){
