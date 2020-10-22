@@ -12,5 +12,6 @@
   + [Dynamic Programming](https://github.com/leejiwon6315/Algorithm/tree/master/백준%20온라인%20저지/DP)
   + [Kruskal Algorithm](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/크루스칼%20알고리즘)
   + [Greedy](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/탐욕법)
+  + [Dijkstra](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/다익스트라)
 
 - [기타](https://github.com/leejiwon6315/Algorithm/tree/master/기타)
