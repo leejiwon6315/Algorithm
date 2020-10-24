@@ -13,5 +13,6 @@
   + [Kruskal Algorithm](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/크루스칼%20알고리즘)
   + [Greedy](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/탐욕법)
   + [Dijkstra](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/다익스트라)
+  + [Topology Sort](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/위상%20정렬)
 
-- [기타](https://github.com/leejiwon6315/Algorithm/tree/master/기타)
+- [e.t.c](https://github.com/leejiwon6315/Algorithm/tree/master/기타)
