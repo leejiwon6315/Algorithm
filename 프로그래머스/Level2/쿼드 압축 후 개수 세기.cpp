@@ -3,9 +3,11 @@
 
 using namespace std;
 
-int zero = 0, one = 0;
-void dq(int x, int y, int size, vector<vector<int>> tmp){
+vector<vector<int>> tmp;
+
+void dfs(int x, int y, int size, vector<int> &answer){
     bool checkOne = true, checkZero = true;
+    
     for(int i=x; i< x+size; i++){
         for(int j=y; j< y+size; j++){
             if(tmp[i][j]==0) checkOne = false;
@@ -13,27 +15,26 @@ void dq(int x, int y, int size, vector<vector<int>> tmp){
         }
     }
     if(checkOne){
-        one ++;
+        answer[1] ++;
         return;
     }
     if(checkZero){
-        zero ++;
+        answer[0] ++;
         return;
     }
 
-    dq(x, y, size/2, tmp);
-    dq(x + size/2, y, size/2, tmp);
-    dq(x, y + size/2, size/2, tmp);
-    dq(x + size/2, y + size/2, size/2, tmp);
+    dfs(x, y, size/2, answer);
+    dfs(x + size/2, y, size/2, answer);
+    dfs(x, y + size/2, size/2, answer);
+    dfs(x + size/2, y + size/2, size/2, answer);
 }
 
 
 vector<int> solution(vector<vector<int>> arr) {
-    vector<int> answer;
-
-    dq(0,0,arr.size(),arr);
+    vector<int> answer(2,0);
     
-    answer.push_back(zero);
-    answer.push_back(one);
+    tmp = arr;
+    dfs(0,0,arr.size(),answer);
+    
     return answer;
 }
