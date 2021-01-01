@@ -6,7 +6,6 @@ using namespace std;
 
 int main(){
     vector<string> word;
-    string result = "";
     
     for(int i=0; i<5; i++){
         string input;
