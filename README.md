@@ -13,6 +13,7 @@
   + [Dijkstra](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/다익스트라)
   + [Dynamic Programming](https://github.com/leejiwon6315/Algorithm/tree/master/백준%20온라인%20저지/DP)
   + [Greedy](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/탐욕법)
+  + [Heap & Queue](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/Heap%20%26%20Queue)
   + [Kruskal Algorithm](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/크루스칼%20알고리즘)
   + [Topology Sort](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/위상%20정렬)
   + [KOI](https://github.com/leejiwon6315/JEEWONs-Algorithm-Solution/tree/master/백준%20온라인%20저지/KOI)
