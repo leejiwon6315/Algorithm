@@ -1,6 +1,4 @@
 function solution(files) {
-    let answer = [];
-
     let orderObject = files.map((name, index) => ({name, index}));
     // sort 적용시 같은 결과 값에 대해 원래 순서를 유지하기 위해 index를 추출하여 묶음
 
