@@ -1,22 +1,25 @@
-function solution(answers) {
-    let answer = [];
-    let point = [0,0,0]; 
-    const arr1 = [1,2,3,4,5];
-    const arr2 = [2,1,2,3,2,4,2,5];
-    const arr3 = [3,3,1,1,2,2,4,4,5,5];
+function solution(priorities, location) {
+    let check = 0, cnt = 1;
+    let hashMap = priorities.map((elem, index) => [elem, index]);
     
-    for(let i=0; i<answers.length; i++){
-        if(arr1[i%arr1.length] === answers[i]) point[0]++;
-        if(arr2[i%arr2.length] === answers[i]) point[1]++;
-        if(arr3[i%arr3.length] === answers[i]) point[2]++;
+    while(hashMap.length > 0){
+        const tmp = hashMap[0];
+        
+        for(let i=1; i<hashMap.length; i++){
+            if(hashMap[i][0] > tmp[0]){
+                hashMap = hashMap.slice(1, hashMap.length);
+                hashMap.push(tmp);
+                check = 0;
+                break;
+            }
+            
+            check = 1;
+        }
+        
+        if(check === 1){
+            if(tmp[1] === location) return cnt;
+            cnt ++;
+            hashMap = hashMap.slice(1, hashMap.length);
+        }
     }
-    let tmp = point;
-    
-    const max = Math.max.apply(null,tmp);
-    
-    for(let i=0; i<tmp.length; i++){
-        if(max === point[i]) answer.push(i+1);
-    }
-    
-    return answer;
 }
